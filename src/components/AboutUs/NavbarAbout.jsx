@@ -4,12 +4,12 @@ import Logo from "../../assets/Logo-about.svg";
 
 const NavbarAbout = ({ title }) => {
   const links = [
-    { name: "Home", path: "http://localhost:5173/" },
+    { name: "Home", path: "/" },
     { name: "Product", path: "/product" },
     { name: "Blog", path: "/blog" },
     { name: "Pricing", path: "/pricing" },
     { name: "Contact", path: "/contact" },
-    { name: "About Us", path: "http://localhost:5173/aboutus" },
+    { name: "About Us", path: "/aboutus" },
   ];
 
   return (
@@ -33,7 +33,7 @@ const NavbarAbout = ({ title }) => {
         </div>
         <div className="flex flex-row flex-start p-0 gap-6 items-center">
           <Link
-            to="http://localhost:5173/signin"
+            to="/signin"
             className="text-white inline-block font-bold hover:font-extrabold"
           >
             Sign In
